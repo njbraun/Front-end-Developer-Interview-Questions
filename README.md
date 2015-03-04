@@ -96,8 +96,14 @@ Keep in mind that many of these questions are open ended and could lead to inter
 ```javascript
 function Person(){} var person = Person() var person = new Person()
 ```
-* What's the difference between `.call` and `.apply`? 
-* explain `Function.prototype.bind`? 
+* What's the difference between `.call` and `.apply`?
+```
+ANSWER: Both are used to execute the function name they are appended to. The first parameter that is passed is thisArg, the second is list of comma delimited parameters for Call and an array of parameters for Apply
+```
+* explain `Function.prototype.bind`?
+```
+ANSWER: Allows you to bind 'this' of the parents scope to that of the function being called. Usefull in timeouts
+```
 * When do you optimize your code? 
 * Can you explain how inheritance works in JavaScript?   
 * When would you use `document.write()`?
